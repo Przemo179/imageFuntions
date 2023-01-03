@@ -1,0 +1,70 @@
+.ScrollingImages    {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.image1 {background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Red_Kitten_01.jpg/800px-Red_Kitten_01.jpg');}
+.image2 {background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg");}
+.image3 {background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gold_Dust_Day_Gecko_closeup_hawaii_edit_1.jpg/600px-Gold_Dust_Day_Gecko_closeup_hawaii_edit_1.jpg');}
+.image4 {background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Stoned_Fox_.jpg/599px-Stoned_Fox_.jpg");}
+.image5 {background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Tallinn_Zoo_Ovis_dalli_2.jpg/800px-Tallinn_Zoo_Ovis_dalli_2.jpg");}
+.image6 {background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Caracal_on_the_road%2C_early_morning_in_Kgalagadi_%2836173878220%29.jpg/600px-Caracal_on_the_road%2C_early_morning_in_Kgalagadi_%2836173878220%29.jpg");}
+
+.HorizontalScrollingImgMeasurements   {
+    background-size: 100% 100%; /* przemek ty durniu xd */
+    height: 600px;
+    width: 600px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.5);
+    position: relative;
+}
+
+.HorizontalScrollingImgMeasurements div{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0, 0.5);
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 30%;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.HorizontalScrollingImgMeasurements div.show{
+    opacity: 1;
+    padding-top:40%;
+}
+
+
+.editing_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.display_image  {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+.checkbox_div {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkslategray;
+}

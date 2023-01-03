@@ -1,0 +1,154 @@
+@import "SecondHeadline.css";
+
+html{
+    box-sizing: border-box;
+    background: #eeee;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    padding: 0.5%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(152,154,154,1) 0%, rgba(254,254,254,1) 100%);
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+nav {
+    background: darkslategray;
+    top: 0;
+    width: 100%;
+    transition:all 0.5s;
+    position: relative;
+    z-index: 1;
+  }
+  
+  body.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  li:hover  {
+    color: black;
+    font-size: 25px;
+    transition: transform 1s;
+  }
+  
+  li.logo {
+    max-width: 0;
+    overflow: hidden;
+    background: white;
+    transition: all 1s;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  li.logo a {
+    color: black;
+  }
+  
+  .fixed-nav li.logo {
+    max-width: 700px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+  }
+
+  /* Grid layout css */
+
+.grid_mountain   {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 24.5%);
+    grid-gap: 0.5%;
+    max-width: 100%;
+    height: 1000px;
+    max-height: 800px;
+}
+
+.firstMountain  {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+}
+
+.secondMountain {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.thirdMountain  {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.forthMountain  {
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+}
+
+.fifthMountain  {
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+}
+
+.imgFit {
+  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: darkslategray;
+    border-width: 2%;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 6%;
+}
+
+/* text for Mountain sector */
+.text {
+    position: relative;
+}
+
+.textOnImg  {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}

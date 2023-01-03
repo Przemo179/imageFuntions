@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="cssFiles/Photos.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center; color: darkslategray; font-size: 50px;" >Training website</h1>
+    </header>
+    <nav id="main">
+        <ul>
+            <li class="logo"><a href="#">Return</a></li>
+            <li><a href="#mountain">Photos of Mountain</a></li>
+            <li><a href="#animals">Photos of Animals</a></li>
+            <li><a href="#imageEditing">Edit you photo!</a></li>
+        </ul>
+    </nav>
+
+    <section id="mountain">
+        <h1 style="color:darkslategray ">Mountain (Grid layout)</h1>
+        <div class="grid_mountain"> <!-- creating grid -->
+            <div class="firstMountain text"> <!-- place in grid for first cell -->
+                <img class="imgFit" src="PhotosBase/firstMountain.png" alt="icon"/>
+                <p class='textOnImg'>First image</p>
+            </div>
+            <div class="secondMountain text"> <!-- place in grid for 2nd cell -->
+                <img class="imgFit" src="PhotosBase/SecondMountain.png" alt="icon" id="TextImg2"/>
+                <p class="textOnImg">Second image</p>
+             </div>
+            <div class="thirdMountain text"> <!-- place in grid for 3rd cell -->
+                <img class="imgFit" src="PhotosBase/thirdMountain.jpg" alt="icon" id="TextImg3"/>
+                <p class="textOnImg">Third image</p>
+            </div>
+            <div class="forthMountain text"> <!-- place in grid for 4th cell -->
+                <img class="imgFit" src="PhotosBase/forthMountain.png" alt="icon" id="TextImg4"/>
+                <p class="textOnImg">Fourth image</p>
+                </div>
+             <div class="fifthMountain text"> <!-- place in grid for 5th cell -->
+                <img class="imgFit" src="PhotosBase/fifthMountain.png" alt="icon" id="TextImg5"/>
+                <p class="textOnImg" style="color:black">Fifth image</p>
+             </div>
+        </div>
+    </section>
+
+    <section id="animals">
+        <h1 style="color:darkslategray">Animals</h1>
+        <div class="ScrollingImages">
+            <div class="image1 HorizontalScrollingImgMeasurements">
+                <div>Cute cat</div>
+            </div>
+
+            <div class="image2 HorizontalScrollingImgMeasurements">
+                <div>Another cute cat</div>
+            </div>
+
+            <div class="image3 HorizontalScrollingImgMeasurements">
+                <div>Green something</div>
+            </div>
+
+            <div class="image4 HorizontalScrollingImgMeasurements">
+                <div>Me during coding :( </div>
+            </div>
+
+            <div class="image5 HorizontalScrollingImgMeasurements">
+                <div>My Ex</div>
+            </div>
+                
+            <div class="image6 HorizontalScrollingImgMeasurements">
+                <div>My next ( ͡° ͜ʖ ͡°)</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="imageEditing">
+        <h1 style="color:darkslategray">Add your file</h1>
+        <div>if you don't want to put your own file, choose one below!</div>
+            <div class="checkbox_div">
+                <input id="chooseImg_checkbox1" type="checkbox">
+                <p>Cute cat nr 1</p>
+            </div>
+            <div class="checkbox_div">
+                <input id="chooseImg_checkbox2" type="checkbox">
+                <p>Weird fox</p>
+            </div>\
+            <div class="checkbox_div">
+                <input id="chooseImg_checkbox3" type="checkbox">
+                <p>Green lizard/frog</p>
+            </div>
+            <div class="editing_section">
+                <input type="file" id="image_input" accept="image/png, image/jpg">
+                <div class="display_image"></div>
+            </div>
+    </section>
+<script src="jsFiles/Photos.js">
+</script>
+
+</body>
+</html>
